@@ -35,7 +35,7 @@
 }
 
 .card-front, .card-back{
-position: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden; 
@@ -75,7 +75,7 @@ position: absolute;
 
 .pokemon-moves {
     font-size: 14px;
-    width: 100%;
+    text-align: center;
 }
 
 .pokemon-moves ul {
