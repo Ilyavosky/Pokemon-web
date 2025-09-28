@@ -1,0 +1,131 @@
+/* css/global.css */
+
+/* Importación de fuentes y reseteo universal */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Estructura principal de la página (Grid Layout) */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #182441;
+    margin: 0;
+}
+
+/* --- Todos los estilos del Header y Navbar --- */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    background-color: #ECECE4;
+    padding: 0 40px;
+}
+
+.navbar-logo {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 45px;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.05);
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+nav ul li:last-child a {
+    background-color: #A9555C;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 50px;
+}
+
+nav ul li:last-child a:hover {
+    background-color: #8f484d;
+}
+
+/* --- Estilos del Footer --- */
+footer {
+    background-color: #ECECE4;
+    color: #333;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+/* --- Estilos del Botón de Música --- */
+#music-toggle-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease-out, color 0.2s ease-out;
+}
+
+#music-toggle-btn:hover {
+    color: #A9555C;
+    transform: scale(1.15) rotate(15deg);
+}
+
+/* --- Media Queries PARA ELEMENTOS GLOBALES --- */
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 25px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 15px;
+        gap: 15px;
+    }
+    .navbar-logo {
+        height: 50px;
+    }
+    nav ul {
+        gap: 15px;
+    }
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+    nav ul li:last-child a {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}
