@@ -1,0 +1,109 @@
+.analyzer-main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.analyzer-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.analyzer-header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #ECB1CD;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.team-sprites-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.team-sprites-container img {
+    width: 60px;
+    height: 60px;
+}
+
+.analysis-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background-color: #2a2a2e;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.analysis-section {
+    background-color: #3c3c42;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.analysis-section h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #ECB1CD;
+    margin-top: 0;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.type-analysis-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a4a52;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.type-count {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 5px;
+    color: #fff;
+}
+
+
+.type-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.type-grass { background-color: #78C850; }
+.type-poison { background-color: #A040A0; }
+.type-fire { background-color: #F08030; }
+.type-flying { background-color: #A890F0; }
+.type-water { background-color: #6890F0; }
+.type-bug { background-color: #A8B820; }
+.type-normal { background-color: #A8A878; }
+.type-electric { background-color: #F8D030; }
+.type-ground { background-color: #E0C068; }
+.type-fighting { background-color: #C03028; }
+.type-psychic { background-color: #F85888; }
+.type-rock { background-color: #B8A038; }
+.type-ice { background-color: #98D8D8; }
+.type-ghost { background-color: #705898; }
+.type-dragon { background-color: #7038F8; }
+.type-dark { background-color: #705848; }
+.type-steel { background-color: #B8B8D0; }
+.type-fairy { background-color: #EE99AC; }
