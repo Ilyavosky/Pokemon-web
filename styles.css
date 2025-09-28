@@ -1,17 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
 main {
     flex: 1; 
     display: flex; 
-    
     width: 100%; 
-    max-width: 1440px; 
-    
-    margin: 0 auto; 
+    max-width: 1280px; 
+    margin: 0 auto;
 }
 
 .column-left {
@@ -26,30 +24,85 @@ main {
     padding: 40px; 
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.rounded-content-image{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 162.5px;
 }
 
-body {
+.column-left, .column-right{
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.text-content p{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.text-content p.lead{
+    font-size: 20px;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-content strong{
+    font-weight: 700;
+}
+
+.info-button{
+    display: inline-block;
+    background-color: #6c7ead;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    align-self: center;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.info-button:hover{
+    background-color: #56658b;
+    transform: translateY(-3px);
+}
+
+
+body {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     background-color: #182441; 
+    /*padding: 50px 0;*/
+    margin: 0;
 }
 
 nav {
     display: flex;
     justify-content: flex-start;
-    gap: 50px;
+    gap: 40px;
     align-items: center;
     background-color: #ECECE4;
     padding: 0 40px;
 }
 
 .navbar-logo {
-    height: 75px;
+    height: 60px;
 }
 
 nav ul {
@@ -59,20 +112,21 @@ nav ul {
     display: flex;
     width: 100%;
     align-items: center;
+    gap: 45px;
 }
 
-nav ul li:not(:last-child) {
+/*nav ul li:not(:last-child) {
     margin-right: 45px;
-}
+}*/
 
 nav ul li a {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 22px;
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     transition: transform 0.2s ease;
 }
@@ -88,21 +142,20 @@ nav ul li:last-child {
 nav ul li:last-child a {
     background-color: #A9555C;
     color: white;
-    padding: 10px 10px;
-    border-radius: 8px;
+    padding: 10px 22px;
+    border-radius: 50px;
 }
 
 nav ul li:last-child a:hover {
     background-color: #8f484d;
-    transform: scale(1.05);
 }
-
 
 
 #music-toggle-btn{
     position: fixed;
     bottom: 25px;
     right: 25px;
+    z-index: 999;
     background: none;
     border: none;
     font-size: 28px;
@@ -117,10 +170,75 @@ nav ul li:last-child a:hover {
     transform: scale(1.15) rotate(15deg);
 }
 
+@media (max-width: 1024px) {
+    main{
+        margin: 35px auto;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    nav ul li a{
+        font-size: 18px;
+    }
+
+   /* nav ul li:not(:last-child){
+        margin-right: 20px;
+    }*/
+
+    nav ul{
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    main{
+        /*flex-direction: column;*/
+        margin: 25px 0;
+        padding: 0 15px;
+    }
+
+    nav{
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+
+    .navbar-logo{
+        height: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    /*nav ul li:not(:last-child){
+        margin-right: 10px;
+    }*/
+
+    nav ul li:last-child a{
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .rounded-content-image{
+        width: 95%;
+    }
+
+    .column-left, .column-right{
+        flex-basis: 100%;
+    
+    }
+}
+
 footer {
     background-color: #ECECE4;
     color: #333;
     text-align: center;
     padding: 20px 40px;
-    margin-top: auto;
+    /*margin-top: auto;*/
 }
