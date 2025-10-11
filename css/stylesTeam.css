@@ -38,7 +38,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; 
+    backface-visibility: hidden;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
 }
 
 .pokemon-card:hover {
@@ -97,7 +97,7 @@
 
 .pokemon-name{
     font-family: 'Poppins', sans-serif;
-    color: #ECB1CD;    
+    color: #ECB1CD;
     font-size: 20px;
     margin: 0;
     font-weight: 600;

@@ -63,7 +63,7 @@ const teamHTML = wolfeyTeam.map(pokemon => {
     const movesHTML = pokemon.moves.map(move => `<li>${move}</li>`).join('');
 
     return `
-        <div class="pokemon-card">
+      <li class="pokemon-card">
             <div class="card-inner">
                 <div class="card-front">
                     <img class="pokemon-sprite" src="${spriteUrl}" alt="Sprite de ${pokemon.name}">
@@ -84,7 +84,7 @@ const teamHTML = wolfeyTeam.map(pokemon => {
                     </div>
                 </div>
             </div>
-        </div>
+        </li>
     `;
 }).join('');
 
