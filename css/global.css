@@ -92,6 +92,19 @@ footer {
     transform: scale(1.15) rotate(15deg);
 }
 
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; 
+    }
+}
+
 @media (max-width: 1024px) {
     nav ul {
         gap: 25px;
